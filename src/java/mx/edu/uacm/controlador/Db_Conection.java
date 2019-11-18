@@ -32,7 +32,7 @@ public class Db_Conection {
 
     public Db_Conection(String user, String pass) {
 
-        url = "jdbc:mysql://localhost/ASISTENCIA";
+        url = "jdbc:mysql://localhost/Proyecto_Final_Web";
         Db_Conection.user = user;
         Db_Conection.pass = pass;
     }
