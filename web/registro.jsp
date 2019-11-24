@@ -76,7 +76,7 @@ body {
           </div>
          
           <button type="submit" class="btn-primary form-control">Registrarse</button>
-          <a href="index.html">Tienes cuenta ingresa</a>
+          <a href="login.jsp">Tienes cuenta ingresa</a>
         </form>
       </div>
   </div>
