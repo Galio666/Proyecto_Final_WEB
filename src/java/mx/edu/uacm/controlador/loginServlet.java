@@ -29,7 +29,7 @@ public class loginServlet extends HttpServlet {
     Usuario usuario;
     UsiarioController usuarioDb;
 
-    public loginServlet() {
+    public void init() {
        usuarioDb=new UsiarioController();
     }
     
@@ -45,22 +45,7 @@ public class loginServlet extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet loginServlet</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet loginServlet at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
-    }
+    
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -74,7 +59,7 @@ public class loginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+       
     }
 
     /**
@@ -100,12 +85,12 @@ public class loginServlet extends HttpServlet {
             if(usuarioDb.validarUsuario(usuario)){
                 HttpSession session=request.getSession();
                 session.setAttribute("nomUsuario", nomUsuario);
-                response.sendRedirect("inicio.jsp");
+                response.sendRedirect("principal.jsp");
             
             }else{
                 HttpSession session=request.getSession();
                 session.setAttribute("nomUsuario", nomUsuario);
-                response.sendRedirect("index.hml");
+                response.sendRedirect("Login.jsp");
             }
         } catch (SQLException ex) {
             Logger.getLogger(loginServlet.class.getName()).log(Level.SEVERE, null, ex);

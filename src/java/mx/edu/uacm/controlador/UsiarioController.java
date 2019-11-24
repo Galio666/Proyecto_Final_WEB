@@ -19,15 +19,22 @@ public class UsiarioController {
     
      Db_Conection coneccion;
     private Connection connection;
+
+    public UsiarioController() {
+        coneccion = new Db_Conection();
+    }
+    
+    
     
     
     public boolean validarUsuario(Usuario usuario) throws SQLException{
         
         boolean encontrado=false;
-        String sql = "SELECT USUARIO,CONTRASENA FROM USUARIO WHERE  USUARIO =? AND CONTRASENA=?";
-        try{
+        String sql = "SELECT USUARIO,CONTRASENA FROM USUARIO WHERE  USUARIO =? AND CONTRASENA=MD5(?)";
         coneccion.conectar();
         connection = coneccion.getConexion();
+        try{
+        
         PreparedStatement statement = connection.prepareStatement(sql);
             statement.setString(1, usuario.getUsuario());
             statement.setString(2, usuario.getContraseña());
@@ -45,7 +52,7 @@ public class UsiarioController {
     }
     
      public boolean insertarUuario(Usuario usuario) throws SQLException {
-        String sql = "INSERT INTO USUARIO(ID,NOMBRE,APELLIDOP,APELLIDOM,EMAIL,USUARIO,CONTRASENA) VALUES (?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO USUARIO(ID,NOMBRE,APELLIDOP,APELLIDOM,EMAIL,USUARIO,CONTRASENA) VALUES (?,?,?,?,?,?,MD5(?))";
         coneccion.conectar();
         connection = coneccion.getConexion();
         PreparedStatement statement = connection.prepareStatement(sql);
@@ -64,7 +71,7 @@ public class UsiarioController {
      
      
       public boolean actualizarUsuario(Usuario usuario) throws SQLException {
-        String sql = "UPDATE USUARIO SET NOMBRE=?,APELLIDOP=?,APELLIDOM=?,EMAIL=?,USUARIO=?,CONTRASENA=? WHERE ID=?";
+        String sql = "UPDATE USUARIO SET NOMBRE=?,APELLIDOP=?,APELLIDOM=?,EMAIL=?,USUARIO=?,CONTRASENA=MD5(?) WHERE ID=?";
         coneccion.conectar();
         connection = coneccion.getConexion();
         PreparedStatement statement = connection.prepareStatement(sql);
