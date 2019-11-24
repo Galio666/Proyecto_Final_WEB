@@ -48,31 +48,35 @@ body {
   <div class="container">
   <div class="col-xs-12 col-sm-8 col-md-4 col-lg-4 col-centered">
   <div class="jumbotron">
-      <h4>Sistema de Cuestionarios</h4>
-        <h3 >Registro Usuario</h3>
+      
+        <h3 >Registro Usuario</h3>  
         
-        
-        <form action="regsitroServlet" method="POST">
+        <form action="ResgitroServlet" method="POST">
           <div class="form-group">
-              <br>
-              <input type="text" class="form-control" placeholder="Ingresa Nobre" name="nombre">
+              
+              <input type="text" class="form-control" placeholder="Nombre" name="nombre"  required="true">
           </div>
             <div class="form-group">
-              <br>
-              <input type="text" class="form-control" placeholder="Ingresa Apellido Paterno" name="apellidoP">
+              
+              <input type="text" class="form-control" placeholder="Apellido Paterno" name="apellidoP"  required="true">
           </div>
              <div class="form-group">
-              <br>
-              <input type="text" class="form-control" placeholder="Ingresa Apellido Materno" name="apellidoM">
+              
+              <input type="text" class="form-control" placeholder="Apellido Materno" name="apellidoM">
           </div>
              <div class="form-group">
-              <br>
-              <input type="text" class="form-control" placeholder="Ingresa Usuario" name="usuario">
+              
+              <input type="text" class="form-control" placeholder="Usuario" name="usuario"  required="true">
+          </div>
+            
+             <div class="form-group">
+              
+              <input type="text" class="form-control" placeholder="Email" name="email"  required="true" >
           </div>
             
           <div class="form-group">
-              <br>
-              <input type="password" class="form-control" placeholder="Ingresa Contraseña" name="pass">
+              
+              <input type="password" class="form-control" placeholder="Contraseña" name="pass" required="true">
           </div>
          
           <button type="submit" class="btn-primary form-control">Registrarse</button>
