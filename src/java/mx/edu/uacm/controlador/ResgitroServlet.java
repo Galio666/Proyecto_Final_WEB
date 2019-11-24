@@ -75,6 +75,8 @@ public class ResgitroServlet extends HttpServlet {
         usuario.setContraseña(pass);
         try {
             usuarioDb.insertarUuario(usuario);
+            
+            
         } catch (SQLException ex) {
             Logger.getLogger(ResgitroServlet.class.getName()).log(Level.SEVERE, null, ex);
         }

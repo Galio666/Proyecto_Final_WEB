@@ -60,6 +60,10 @@ public class loginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
        
+                HttpSession session=request.getSession();
+		session.removeAttribute("nomUsuario");
+		session.invalidate();
+		response.sendRedirect("login.jsp");
     }
 
     /**
@@ -84,13 +88,12 @@ public class loginServlet extends HttpServlet {
         try{
             if(usuarioDb.validarUsuario(usuario)){
                 HttpSession session=request.getSession();
-                session.setAttribute("nomUsuario", nomUsuario);
+                session.setAttribute("nomUsuario",nomUsuario);
                 response.sendRedirect("principal.jsp");
             
             }else{
-                HttpSession session=request.getSession();
-                session.setAttribute("nomUsuario", nomUsuario);
-                response.sendRedirect("Login.jsp");
+                
+                response.sendRedirect("login.jsp");
             }
         } catch (SQLException ex) {
             Logger.getLogger(loginServlet.class.getName()).log(Level.SEVERE, null, ex);
