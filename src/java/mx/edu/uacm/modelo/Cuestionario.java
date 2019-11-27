@@ -14,6 +14,7 @@ import java.util.List;
 public class Cuestionario {
     
     private int id;
+    private String categoria;
     private List<Preguntas> preguntas;
 
     public Cuestionario() {
@@ -33,6 +34,15 @@ public class Cuestionario {
         this.id = id;
     }
 
+    public String getMateria() {
+        return categoria;
+    }
+
+    public void setMateria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    
     /**
      * @return the preguntas
      */

@@ -16,6 +16,8 @@ class Preguntas {
     private Respuesta[] respuesta;
 
     public Preguntas() {
+        
+        
     }
 
     /**
