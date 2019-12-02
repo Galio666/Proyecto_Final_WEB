@@ -3,6 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/home/tomas/NetBeansProjects/Proyecto_Final_WEB/src/java/mx/edu/uacm/modelo/Cuestionario.java</file>
+            <file>file:/home/tomas/NetBeansProjects/Proyecto_Final_WEB/src/java/mx/edu/uacm/controlador/CuestionarioControlador.java</file>
+            <file>file:/home/tomas/NetBeansProjects/Proyecto_Final_WEB/web/login.jsp</file>
+            <file>file:/home/tomas/NetBeansProjects/Proyecto_Final_WEB/src/java/mx/edu/uacm/modelo/Preguntas.java</file>
+            <file>file:/home/tomas/NetBeansProjects/Proyecto_Final_WEB/web/verCuestionario.jsp</file>
+            <file>file:/home/tomas/NetBeansProjects/Proyecto_Final_WEB/src/java/mx/edu/uacm/modelo/Usuario.java</file>
+            <file>file:/home/tomas/NetBeansProjects/Proyecto_Final_WEB/web/registro.jsp</file>
+            <file>file:/home/tomas/NetBeansProjects/Proyecto_Final_WEB/src/java/mx/edu/uacm/controlador/Db_Conection.java</file>
+            <file>file:/home/tomas/NetBeansProjects/Proyecto_Final_WEB/src/java/mx/edu/uacm/controlador/loginServlet.java</file>
+            <file>file:/home/tomas/NetBeansProjects/Proyecto_Final_WEB/web/principal.jsp</file>
+            <file>file:/home/tomas/NetBeansProjects/Proyecto_Final_WEB/src/java/mx/edu/uacm/controlador/UsiarioController.java</file>
+            <file>file:/home/tomas/NetBeansProjects/Proyecto_Final_WEB/src/java/mx/edu/uacm/modelo/Respuesta.java</file>
+            <file>file:/home/tomas/NetBeansProjects/Proyecto_Final_WEB/web/CrearCuestionario.jsp</file>
+            <file>file:/home/tomas/NetBeansProjects/Proyecto_Final_WEB/src/java/mx/edu/uacm/controlador/CuestionarioServlet.java</file>
             <file>file:/home/tomas/NetBeansProjects/Proyecto_Final_WEB/web/index.html</file>
         </group>
     </open-files>
