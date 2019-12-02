@@ -13,9 +13,10 @@ import java.util.List;
  */
 public class Cuestionario {
     
-    private int id;
+    private int id; 
+    private String titulo;
     private String categoria;
-    private List<Preguntas> preguntas;
+ 
 
     public Cuestionario() {
     }
@@ -34,30 +35,12 @@ public class Cuestionario {
         this.id = id;
     }
 
-    public String getMateria() {
+    public String getCategoria() {
         return categoria;
     }
 
-    public void setMateria(String categoria) {
+    public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
 
-    
-    /**
-     * @return the preguntas
-     */
-    public List<Preguntas> getPreguntas() {
-        return preguntas;
-    }
-
-    /**
-     * @param preguntas the preguntas to set
-     */
-    public void setPreguntas(List<Preguntas> preguntas) {
-        this.preguntas = preguntas;
-    }
-    
-    
-    
-    
 }

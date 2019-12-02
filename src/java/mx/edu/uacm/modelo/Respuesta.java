@@ -9,7 +9,7 @@ package mx.edu.uacm.modelo;
  *
  * @author tomas
  */
-class Respuesta {
+public class Respuesta {
     
     private String respuesta;
     private char inciso;

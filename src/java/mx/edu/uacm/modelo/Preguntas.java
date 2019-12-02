@@ -9,7 +9,7 @@ package mx.edu.uacm.modelo;
  *
  * @author tomas
  */
-class Preguntas {
+public class Preguntas {
     
     private int id;
     private String pregunta;
