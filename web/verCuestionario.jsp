@@ -69,11 +69,11 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="principal.jsp">PRINCIPAL <span class="sr-only"></span></a>
           </li>
          
            <li class="nav-item active">
-            <a class="nav-link" href="#">CUESTIONARIOS <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="verCuestionario.jsp">VER CUESTIONARIOS <span class="sr-only">(current)</span></a>
           </li>
           
         </ul>
@@ -84,5 +84,63 @@
       </div>
     </nav>
   </header>
+
+<!-------------------------------------------------------------------------
+CONTENEDORES PARA MOSTRAR LOS CUESTIONARIOS DE CADA CATEGORIA
+-->
+
+<div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Matematicas</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Matematicas</text></svg>
+            <div class="card-body">
+              <p class="card-text">Cuestionario de conocimientos generales de matematicas</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                  
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Ciencias Naturales</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Ciencias Naturales</text></svg>
+            <div class="card-body">
+              <p class="card-text">Cuestionario de conocimientos generales de ciencias naturales</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Historia</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Historia</text></svg>
+            <div class="card-body">
+              <p class="card-text">Cuestionario de conocimientos generales de historia</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
     </body>
 </html>
